@@ -8,9 +8,7 @@ const Payer = () => {
  
  const day = new Date().toISOString().split("T")[0];
 //  const api = `https://api.aladhan.com/v1/timingsByAddress`;
-// const api = "https://api.aladhan.com/v1/timingsByCity/${dateOfDay()}?city=${s}&country=${c}&method=5"
-const api = "https://api.aladhan.com/v1/timingsByCity"
-
+const api = "https://api.aladhan.com/v1/timingsByCity/${dateOfDay()}?city=${s}&country=${c}&method=5"
  const [search,setSearch] = useState('القاهرة'); 
  // const functionPayer = axios.get(api).then(res => setPayer(res.data)).catch(err => console.log(err));
  useEffect(()=>{
